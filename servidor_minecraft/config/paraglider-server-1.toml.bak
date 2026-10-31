@@ -1,0 +1,4 @@
+#Fire will float you upward.
+ascendingWinds = true
+windSources = ["fire", "soul_fire", "campfire#lit=true", "soul_campfire#lit=true"]
+

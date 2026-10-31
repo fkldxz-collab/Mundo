@@ -1,0 +1,201 @@
+{
+  "SPAWN CONDITIONS": {
+    "spawn_chance_per_tick": 0.05,
+    "spawn_height": 500,
+    "spawn_in_caves": true,
+    "allow_surface_spawn": true,
+    "sky_light_level": 14,
+    "block_light_level": 7,
+    "maximum_amount": 1,
+    "spawn_distance": 24,
+    "check_path_to_spawn": true,
+    "DIMENSIONS": {
+      "dimension_whitelist": [
+        "minecraft:overworld"
+      ]
+    },
+    "BIOMES": {
+      "override_biome_datapack_config": true,
+      "surface_biomes_is_whitelist": false,
+      "surface_biomes": [
+        "minecraft:desert",
+        "minecraft:badlands",
+        "minecraft:eroded_badlands",
+        "minecraft:wooded_badlands",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:windswept_savanna",
+        "minecraft:swamp",
+        "minecraft:mangrove_swamp",
+        "minecraft:mushroom_fields",
+        "minecraft:ocean",
+        "minecraft:deep_ocean",
+        "minecraft:cold_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:deep_frozen_ocean",
+        "minecraft:ice_spikes",
+        "minecraft:lukewarm_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:warm_ocean",
+        "minecraft:beach",
+        "minecraft:snowy_beach",
+        "minecraft:stony_shore",
+        "minecraft:river",
+        "minecraft:frozen_river",
+        "minecraft:deep_dark"
+      ]
+    },
+    "SPAWN/NOISE/LEAVE TIMERS": {
+      "SPAWN TIMER": {
+        "can_spawn_min": 800,
+        "can_spawn_max": 2400,
+        "can_spawn_cooldown_chance": 0.05,
+        "can_spawn_cooldown": 1200
+      },
+      "NOISE TIMER": {
+        "reset_noise_min": 600,
+        "reset_noise_max": 3600
+      },
+      "LEAVE TIMER": {
+        "time_until_leave": 200,
+        "time_until_leave_chase": 25
+      },
+      "night_spawn_timer_multiplier": 1.5,
+      "night_noise_timer_multiplier": 2.0,
+      "surface_timer_multiplier": 1.0
+    }
+  },
+  "BEHAVIOR": {
+    "abduction_enabled": true,
+    "spotting_range": 100,
+    "can_climb": true,
+    "allow_riding": false,
+    "target_invisible": false,
+    "charge": true,
+    "charge_on_mobs": true,
+    "charge_shield_rush": true,
+    "leap": true,
+    "leap_on_mobs": true,
+    "mimic_sounds": true,
+    "pick_off_stragglers": true,
+    "destroy_crops": true,
+    "CREEP-STALK": {
+      "creep_stalk_chance_cave": 0.5,
+      "creep_stalk_chance_surface": 0.3,
+      "creep_stalk_trigger_distance": 1.0,
+      "creep_stalk_speed": 0.4
+    },
+    "CHARGE": {
+      "shield_stun_disable_min": 5,
+      "shield_stun_disable_max": 10,
+      "charge_impact_radius": 2,
+      "charge_break_blocks": 3,
+      "charge_min_range": 4.0,
+      "charge_max_range": 12.0,
+      "charge_speed": 4.0,
+      "charge_duration": 10,
+      "pause_before_charge": 3,
+      "charge_damage_radius": 2.0,
+      "charge_forward_reach": 2.0,
+      "charge_cooldown_min": 3,
+      "charge_cooldown_max": 6
+    },
+    "LEAP": {
+      "leap_range": 30.0,
+      "leap_min_range": 9.5,
+      "leap_speed": 4.0,
+      "leap_cooldown_min": 4,
+      "leap_cooldown_max": 8,
+      "leap_damage_radius": 3.0,
+      "leap_break_radius": 3
+    },
+    "ABDUCTION": {
+      "third_abduction_chance": 0.5,
+      "abduction_tnt_chance": 0.5,
+      "abduction_wake_health": 5.0,
+      "abduction_blackout_seconds": 10,
+      "second_abduction_blackout_seconds": 15,
+      "third_abduction_blackout_seconds": 20,
+      "abduction_effect_seconds": 60,
+      "second_abduction_effect_seconds": 120,
+      "third_abduction_effect_seconds": 180,
+      "abduction_teleport_min": 20,
+      "abduction_teleport_max": 48,
+      "second_abduction_teleport_min": 48,
+      "second_abduction_teleport_max": 96,
+      "third_abduction_teleport_min": 96,
+      "third_abduction_teleport_max": 160,
+      "abduction_item_count": 15,
+      "second_abduction_item_count": 30,
+      "third_abduction_item_count": 45,
+      "second_abduction_steals_armor": true,
+      "third_abduction_steals_armor": true,
+      "abduction_durability_loss_percent": 0.35,
+      "abduction_decay_days": 8,
+      "abduction_chest_search_radius": 12,
+      "abduction_debug_chest_location": false
+    }
+  },
+  "ATTRIBUTES": {
+    "maximum_armor": 20.0,
+    "maximum_health": 100.0,
+    "attack_damage": 4.0,
+    "movement_speed": 0.6,
+    "depth_strider_bonus": 1.5
+  },
+  "EVENTS": {
+    "WATCHED": {
+      "event_watch_frequency": 0.012,
+      "event_watch_radius": 100.0,
+      "event_watch_duration_min": 30,
+      "event_watch_duration_max": 60,
+      "event_watch_goatman_chance": 0.5,
+      "event_watch_release_cooldown": 120
+    },
+    "FOLLOWED": {
+      "event_followed_frequency": 0.006,
+      "event_followed_radius": 48.0,
+      "event_followed_walk_speed": 1.0,
+      "event_follow_distance": 8.0,
+      "event_followed_duration_min": 30,
+      "event_followed_duration_max": 60,
+      "event_followed_rush_speed": 2.8,
+      "event_followed_damage": 2.0,
+      "event_followed_darkness_duration": 5,
+      "event_followed_goatman_chance": 0.08
+    },
+    "GOAT HERD": {
+      "summon_herd_surface_only": false,
+      "summon_herd_size_min": 6,
+      "summon_herd_size_max": 12,
+      "summon_herd_chance": 0.5
+    },
+    "GOAT OMEN": {
+      "omen_goat_frequency": 1.0,
+      "omen_goat_size_min": 2,
+      "omen_goat_size_max": 4
+    },
+    "omen_goat_enabled": true,
+    "summon_herd": true,
+    "event_watch_enabled": true,
+    "event_follow_enabled": true,
+    "event_buffer": 20,
+    "event_night_frequency_multiplier": 3.5
+  },
+  "MUSIC": {
+    "music_enabled": true,
+    "music_volume": 1.0,
+    "Legacy Music": {
+      "chase_sound_legacy": false,
+      "legacy_chase_volume": 1.0
+    }
+  },
+  "MISC": {
+    "only_play_noise_to_target": false,
+    "charge_and_leap_apply_effects": true,
+    "charge_and_leap_effect_duration": 3,
+    "break_block": true,
+    "drop_block": true
+  }
+}
